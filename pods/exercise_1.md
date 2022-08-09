@@ -6,7 +6,8 @@
 <summary>*Solution*</summary>
 Open an editor (`vim` in my case): `vim nginx.yaml`.
 Create a specification like:
-<code style="white-space:nowrap;">
+
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -18,5 +19,6 @@ spec:
   containers:
     - name: nginx-controller
       image: nginx
-</code>
+```
+
 </details>
