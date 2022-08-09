@@ -6,7 +6,7 @@
 <summary>*Solution*</summary>
 Open an editor (`vim` in my case): `vim nginx.yaml`.
 Create a specification like:
-```yaml
+```
 apiVersion: v1
 kind: Pod
 metadata:
