@@ -8,7 +8,7 @@ In order to pass the test, you will be asked 16 questions covering the following
 
 
 | DOMAIN | WEIGHT |
-|========|========|
+|--------|--------|
 |Application Design and Build	| 20% |
 |Application Deployment	| 20%|
 |Application Observability and Maintenance | 15%|
