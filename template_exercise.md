@@ -5,7 +5,7 @@
 Here it should go an amazing question.
 
 <details>
-  <summary>**Solution**</summary>
+  <summary><strong>Solution</strong></summary>
   
 ```yaml
 apiVersion: v1
