@@ -1,11 +1,11 @@
-# <section>: Exercise <n>
+# Section: Exercise N
 
 ## Question
 
 Here it should go an amazing question.
 
 <details>
-  <summary>## Solution</summary>
+  <summary>**Solution**</summary>
   
 ```yaml
 apiVersion: v1
