@@ -3,8 +3,7 @@
 if ! command -v kind &> /dev/null
 then
     echo "Kind could not be found"
-    echo "Installing using brew..."
-    brew install kind
+    echo "Please install it..."
 fi
 
 kind_get_clusters=$(kind get clusters)
