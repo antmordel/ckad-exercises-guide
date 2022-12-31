@@ -1,7 +1,5 @@
 # Section: Exercise N
 
-## Question
-
 Here it should go an amazing question.
 
 <details>
