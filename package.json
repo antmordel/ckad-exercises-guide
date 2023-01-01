@@ -1,0 +1,14 @@
+{
+  "name": "ckad-exercises-guide",
+  "version": "1.0.0",
+  "description": "This repository is strongly inspired by [bmunshko/ckad-crash-course](https://github.com/bmuschko/ckad-crash-course). These are the exercises I did to prepare for the CKAD exam. And the exercises I used for a Youtube video in which I solve all the exercises in live.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "semantic-release": "^19.0.5"
+  }
+}
