@@ -15,17 +15,29 @@ EOF
   sudo yum install -y kubectl
 }
 
+function install_docker {
+  sudo yum install -y docker
+
+  sudo service docker start
+  sudo usermod -a -G docker ec2-user
+  newgrp docker
+}
+
 function bootstrap {
   echo "Update system"
-  sudo yum update
+  sudo yum update -y
 
   echo "Install Git"
-  sudo yum install git
-
-  echo "Install Docker"
-  sudo yum install
+  sudo yum install -y git
 
   install_kubectl
+  install_docker
+
+  echo "Install Golang"
+  sudo yum install -y golang
+
+  echo "Install Kind"
+  go install sigs.k8s.io/kind@v0.17.0
 }
 
 bootstrap
