@@ -13,6 +13,11 @@ gpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
 
   sudo yum install -y kubectl
+
+  # Completions
+  echo 'source <(kubectl completion bash)' >>~/.bashrc
+  echo 'alias k=kubectl' >>~/.bashrc
+  echo 'complete -o default -F __start_kubectl k' >>~/.bashrc
 }
 
 function install_docker {
@@ -37,6 +42,9 @@ function bootstrap {
   echo "Install Git"
   sudo yum install -y git
 
+  echo "Install bash-completion"
+  sudo yum install -y bash-completion
+
   install_kubectl
   install_docker
 
@@ -44,6 +52,8 @@ function bootstrap {
   sudo yum install -y golang
 
   install_kind
+
+
 }
 
 bootstrap
