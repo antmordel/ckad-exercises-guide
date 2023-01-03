@@ -33,3 +33,11 @@ alias k=kubectl
 
 - [bmunshko/ckad-crash-course](https://github.com/bmuschko/ckad-crash-course)
 - [Udemy course on CDAK](https://www.udemy.com/course/certified-kubernetes-application-developer/)
+
+## Getting started
+
+If you are using a RHEL linux machine for this purpose, you can use the following command to install all the necessary tools:
+  
+  ```bash
+  curl -LsS https://raw.githubusercontent.com/antmordel/ckad-exercises-guide/v1.1.0/utilities/install_dependencies_amazon_linux.sh | bash /dev/stdin
+  ```
