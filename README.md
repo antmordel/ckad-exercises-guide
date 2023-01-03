@@ -17,10 +17,14 @@ In order to pass the test, you will be asked 16 questions covering the following
 
 ## Tips
 
-Anytime you start the test, run the following commands:
-  
+- Anytime you start the test, run the following commands:
 ```bash
 alias k=kubectl
+```
+
+2. Set the current namespace in which you are goint to work:
+```bash
+kubectl config set-context --current --namespace=
 ```
 
 ## Links
@@ -40,7 +44,7 @@ alias k=kubectl
 
 1. Unix platform
 2. Git
-3. Kubectl
+3. Kubectl (with bash completion)
 4. Docker
 5. Kind (for Kind, you probably need Go installed)
 
