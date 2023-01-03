@@ -23,6 +23,13 @@ function install_docker {
   newgrp docker
 }
 
+function install_kind {
+  # Installs and configures kind
+  go install sigs.k8s.io/kind@v0.17.0
+
+  export PATH=$PATH:$(go env GOPATH)/bin
+}
+
 function bootstrap {
   echo "Update system"
   sudo yum update -y
@@ -36,8 +43,7 @@ function bootstrap {
   echo "Install Golang"
   sudo yum install -y golang
 
-  echo "Install Kind"
-  go install sigs.k8s.io/kind@v0.17.0
+  install_kind
 }
 
 bootstrap
