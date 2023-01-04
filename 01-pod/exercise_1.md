@@ -20,7 +20,7 @@ k get po -n ckad-prep -o yaml > mypod.yaml
 k apply -f mypod.yaml
 k exec -ti mypod -- /bin/bash
 k get po -o wide
-k run -i --tty --rm temp --image=busybox --restart=Never -- /bin/sh
+k run temp --image=busybox -it --rm --restart=Never -- /bin/sh
 wget -O- <ip>
 ```
 
