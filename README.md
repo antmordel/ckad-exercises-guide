@@ -53,11 +53,18 @@ kubectl config set-context --current --namespace=
 If you are using a RHEL linux machine for this purpose, you can use the following command to install all the necessary tools:
   
   ```bash
-  curl -LsS https://raw.githubusercontent.com/antmordel/ckad-exercises-guide/v1.5.0/utilities/install_dependencies_amazon_linux.sh | bash /dev/stdin
+  curl -LsS https://raw.githubusercontent.com/antmordel/ckad-exercises-guide/v1.8.0/utilities/install_dependencies_amazon_linux.sh | bash /dev/stdin
   ```
 
 **Download repo**
 
   ```bash
-  curl -LsS https://raw.githubusercontent.com/antmordel/ckad-exercises-guide/v1.5.0/utilities/download_repo.sh | bash /dev/stdin
+  curl -LsS https://raw.githubusercontent.com/antmordel/ckad-exercises-guide/v1.8.0/utilities/download_repo.sh | bash /dev/stdin
+  ```
+
+**Create Kind cluster**
+
+Once you have cloned the repo, you can use the [config_kind.yaml](./config_kind.yaml) to create it:
+  ```bash
+  kind create cluster --name local --config config_kind.yaml
   ```

@@ -2,6 +2,8 @@
 #
 # A bootstrap script to install all the needed for this project on a fresh Amazon Linux 2 machine
 
+set -e
+
 function install_kubectl {
   cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
@@ -32,7 +34,8 @@ function install_kind {
   # Installs and configures kind
   go install sigs.k8s.io/kind@v0.17.0
 
-  export PATH=$PATH:$(go env GOPATH)/bin
+  echo "export PATH=$PATH:$(go env GOPATH)/bin" >>~/.bashrc
+  source ~/.bashrc
 }
 
 function bootstrap {
