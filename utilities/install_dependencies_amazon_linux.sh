@@ -55,8 +55,6 @@ function bootstrap {
   sudo yum install -y golang
 
   install_kind
-
-
 }
 
 bootstrap
